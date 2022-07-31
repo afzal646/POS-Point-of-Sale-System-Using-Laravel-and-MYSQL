@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap");
+body,
+button {
+  font-family: "Inter", sans-serif;
+}
+:root {
+  --offcanvas-width: 270px;
+  --topNavbarHeight: 56px;
+}
+.sidebar-nav {
+  width: var(--offcanvas-width);
+}
+.sidebar-link {
+  display: flex;
+  align-items: center;
+}
+.sidebar-link .right-icon {
+  display: inline-flex;
+}
+.sidebar-link[aria-expanded="true"] .right-icon {
+  transform: rotate(180deg);
+}
+@media (min-width: 992px) {
+  body {
+    overflow: auto !important;
+  }
+  main {
+    margin-left: var(--offcanvas-width);
+  }
+  /* this is to remove the backdrop */
+  .offcanvas-backdrop::before {
+    display: none;
+  }
+  .sidebar-nav {
+    -webkit-transform: none;
+    transform: none;
+    visibility: visible !important;
+    height: calc(100% - var(--topNavbarHeight));
+    top: var(--topNavbarHeight);
+  }
+}
+  .quick_link_box {
+    display: inline-block;
+    border-radius: 5px;
+    box-shadow: 0px 4px 3px rgb(0 0 0 / 10%);
+    text-align: center;
+    background: black;    
+    cursor: pointer;
+    margin: 10px;
+    width: 150px;
+    padding-top: 15px;
+    color: white;
+}
+
+.linkd:hover{
+  color: #C6B299;
+}
+.qucik_links {
+  text-align: center;
+  color: white;
+  font-size: 10px;  
+}
+
+.linkd{
+  text-decoration: none;
+  color: white;
+  
+}
+
+.latest_update {
+  padding: 20px;
+  background: #f0f1f6;
+  margin: 0px -25px;
+}
+
+.latest_update {
+  padding: 20px;
+  background: #f0f1f6;
+  margin: 0px -25px;
+}
+
+.latest_update_info_container {
+  text-align: center;
+}
+
+.brows_color {
+  color: #c6b299;
+}
+
+.blue_color {
+  color: #52d3e9;
+}
+
+.purple_color {
+  color: #7562b4;
+}
+
+.pink_color {
+  color: #f6699d;
+}
+
+.orange_color {
+  color: #ef4023;
+}
+
+.blueDark_color {
+  color: #448bcb;
+}
+
+.green_color {
+  color: #82c96b;
+}
+
+.latest_update_info_box {
+  display: inline-block;
+  border-radius: 5px;
+  box-shadow: 0px 4px 3px rgb(0 0 0 / 10%);
+  text-align: center;
+  margin: 10px;
+  width: 125px;
+  padding: 20px 5px;
+  font-size: 10px;
+  color: black;
+}
+
